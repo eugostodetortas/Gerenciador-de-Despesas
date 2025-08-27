@@ -75,20 +75,24 @@ Para facilitar a execução no Windows, o projeto inclui scripts que automatizam
 
 #### Usando o arquivo `.bat`
 
-1.  Faça o download do arquivo .bat nos releases do projeto.
-2.  Dê um **duplo clique** no arquivo `gerenciador de despesas.bat`.
-3.  O script irá compilar e executar o projeto automaticamente em uma nova janela de console.
+1.  Faça o download do arquivo .zip nos releases do projeto.
+2.  Extraia o arquivo com qualquer gerenciador de arquivos compactados (ex.: 7zip)
+3.  Abra a pasta que foi extraída
+4.  Dê um **duplo clique** no arquivo `gerenciador de despesas.bat`.
+5.  O script irá compilar e executar o projeto automaticamente em uma nova janela de console.
 
 #### Usando o arquivo `.ps1` (PowerShell)
 
-1. Faça o download do arquivo .ps1 nos releases do projeto
-2.  Abra um terminal **PowerShell**.
-3.  Navegue até a pasta onde foi baixado o .ps1
-4.  Execute o script com o seguinte comando:
+1.  Faça o download do arquivo .zip nos releases do projeto.
+2.  Extraia o arquivo com qualquer gerenciador de arquivos compactados (ex.: 7zip)
+3.  Abra a pasta que foi extraída
+4.  Abra um terminal **PowerShell**.
+5.  Navegue até a pasta onde foi baixado o .ps1
+6.  Execute o script com o seguinte comando:
     ```powershell
     .\gerenciador de despesas.ps1
     ```
-5.  **Observação:** Caso encontre um erro relacionado à política de execução de scripts, pode ser necessário permitir a execução de scripts locais. Abra o PowerShell **como Administrador** e execute o comando abaixo para permitir scripts assinados para o usuário atual:
+7.  **Observação:** Caso encontre um erro relacionado à política de execução de scripts, pode ser necessário permitir a execução de scripts locais. Abra o PowerShell **como Administrador** e execute o comando abaixo para permitir scripts assinados para o usuário atual:
     ```powershell
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
