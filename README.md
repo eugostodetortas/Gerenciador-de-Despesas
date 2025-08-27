@@ -46,31 +46,53 @@ Este projeto foi construído com as seguintes tecnologias e bibliotecas:
 
 ### Pré-requisitos
 
-- .NET SDK (versão 6.0 ou superior)
+- **.NET SDK** (versão 6.0 ou superior)
 
-### Passos para Execução
+### Opção 1: Executando via Linha de Comando (Padrão)
 
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/eugostodetortas/GerenciadorDeDespesas.git
    ```
-
 2. **Navegue até a pasta do projeto:**
    ```bash
    cd GerenciadorDeDespesas/Gerenciador
    ```
-
 3. **Restaure as dependências do projeto:**
    ```bash
    dotnet restore
    ```
-
 4. **Execute a aplicação:**
    ```bash
    dotnet run
    ```
 
-Ao executar, um menu interativo será exibido no console, permitindo que você utilize todas as funcionalidades do sistema.
+Ao executar, um menu interativo será exibido no console.
+
+### Opção 2: Executando via Scripts (Windows)
+
+Para facilitar a execução no Windows, o projeto inclui scripts que automatizam o processo de compilação e execução.
+
+#### Usando o arquivo `.bat`
+
+1.  Navegue até a pasta do projeto (`Gerenciador`) no seu explorador de arquivos.
+2.  Dê um **duplo clique** no arquivo `run.bat`.
+3.  O script irá compilar e executar o projeto automaticamente em uma nova janela de console.
+
+#### Usando o arquivo `.ps1` (PowerShell)
+
+1.  Abra um terminal **PowerShell**.
+2.  Navegue até a pasta do projeto: `cd GerenciadorDeDespesas/Gerenciador`
+3.  Execute o script com o seguinte comando:
+    ```powershell
+    .\run.ps1
+    ```
+4.  **Observação:** Caso encontre um erro relacionado à política de execução de scripts, pode ser necessário permitir a execução de scripts locais. Abra o PowerShell **como Administrador** e execute o comando abaixo para permitir scripts assinados para o usuário atual:
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
+
+---
 
 ---
 
